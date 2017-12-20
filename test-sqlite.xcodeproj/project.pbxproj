@@ -14,6 +14,13 @@
 		B83385FA1FEA75AC00DC9218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83385F81FEA75AC00DC9218 /* LaunchScreen.storyboard */; };
 		B83386051FEA75AC00DC9218 /* test_sqliteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83386041FEA75AC00DC9218 /* test_sqliteTests.swift */; };
 		B83386101FEA75AC00DC9218 /* test_sqliteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B833860F1FEA75AC00DC9218 /* test_sqliteUITests.swift */; };
+		B833861E1FEA774700DC9218 /* fmdb in Resources */ = {isa = PBXBuildFile; fileRef = B833861D1FEA774700DC9218 /* fmdb */; };
+		B83386221FEA795A00DC9218 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83386211FEA794700DC9218 /* AVFoundation.framework */; };
+		B83386241FEA797100DC9218 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83386231FEA796B00DC9218 /* AVKit.framework */; };
+		B83386261FEA798900DC9218 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B83386251FEA798900DC9218 /* libsqlite3.0.tbd */; };
+		B83386271FEA7B8200DC9218 /* fmdb in Sources */ = {isa = PBXBuildFile; fileRef = B833861D1FEA774700DC9218 /* fmdb */; };
+		B83386291FEA83FD00DC9218 /* InsertDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83386281FEA83FD00DC9218 /* InsertDataViewController.swift */; };
+		B833862B1FEA854100DC9218 /* Tbl_Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = B833862A1FEA854100DC9218 /* Tbl_Info.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		B833860B1FEA75AC00DC9218 /* test-sqliteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-sqliteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B833860F1FEA75AC00DC9218 /* test_sqliteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_sqliteUITests.swift; sourceTree = "<group>"; };
 		B83386111FEA75AC00DC9218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B833861D1FEA774700DC9218 /* fmdb */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fmdb; sourceTree = "<group>"; };
+		B833861F1FEA77C200DC9218 /* FMDBDatabase_Demo_BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDBDatabase_Demo_BridgeHeader.h; sourceTree = "<group>"; };
+		B83386211FEA794700DC9218 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B83386231FEA796B00DC9218 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		B83386251FEA798900DC9218 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		B83386281FEA83FD00DC9218 /* InsertDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertDataViewController.swift; sourceTree = "<group>"; };
+		B833862A1FEA854100DC9218 /* Tbl_Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tbl_Info.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83386241FEA797100DC9218 /* AVKit.framework in Frameworks */,
+				B83386221FEA795A00DC9218 /* AVFoundation.framework in Frameworks */,
+				B83386261FEA798900DC9218 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +94,12 @@
 		B83385E31FEA75AB00DC9218 = {
 			isa = PBXGroup;
 			children = (
+				B833861F1FEA77C200DC9218 /* FMDBDatabase_Demo_BridgeHeader.h */,
 				B83385EE1FEA75AC00DC9218 /* test-sqlite */,
 				B83386031FEA75AC00DC9218 /* test-sqliteTests */,
 				B833860E1FEA75AC00DC9218 /* test-sqliteUITests */,
 				B83385ED1FEA75AC00DC9218 /* Products */,
+				B83386201FEA794700DC9218 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,9 +119,12 @@
 				B83385EF1FEA75AC00DC9218 /* AppDelegate.swift */,
 				B83385F11FEA75AC00DC9218 /* ViewController.swift */,
 				B83385F31FEA75AC00DC9218 /* Main.storyboard */,
+				B833862A1FEA854100DC9218 /* Tbl_Info.swift */,
+				B83386281FEA83FD00DC9218 /* InsertDataViewController.swift */,
 				B83385F61FEA75AC00DC9218 /* Assets.xcassets */,
 				B83385F81FEA75AC00DC9218 /* LaunchScreen.storyboard */,
 				B83385FB1FEA75AC00DC9218 /* Info.plist */,
+				B833861D1FEA774700DC9218 /* fmdb */,
 			);
 			path = "test-sqlite";
 			sourceTree = "<group>";
@@ -123,6 +145,16 @@
 				B83386111FEA75AC00DC9218 /* Info.plist */,
 			);
 			path = "test-sqliteUITests";
+			sourceTree = "<group>";
+		};
+		B83386201FEA794700DC9218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B83386251FEA798900DC9218 /* libsqlite3.0.tbd */,
+				B83386231FEA796B00DC9218 /* AVKit.framework */,
+				B83386211FEA794700DC9218 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B83385FA1FEA75AC00DC9218 /* LaunchScreen.storyboard in Resources */,
+				B833861E1FEA774700DC9218 /* fmdb in Resources */,
 				B83385F71FEA75AC00DC9218 /* Assets.xcassets in Resources */,
 				B83385F51FEA75AC00DC9218 /* Main.storyboard in Resources */,
 			);
@@ -259,8 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83386271FEA7B8200DC9218 /* fmdb in Sources */,
+				B833862B1FEA854100DC9218 /* Tbl_Info.swift in Sources */,
 				B83385F21FEA75AC00DC9218 /* ViewController.swift in Sources */,
 				B83385F01FEA75AC00DC9218 /* AppDelegate.swift in Sources */,
+				B83386291FEA83FD00DC9218 /* InsertDataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +467,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "utt.test-sqlite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/FMDBDatabase_Demo_BridgeHeader_h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -445,6 +482,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "utt.test-sqlite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/FMDBDatabase_Demo_BridgeHeader_h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
